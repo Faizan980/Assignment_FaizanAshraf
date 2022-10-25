@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lobster', cursive;
+
+    
+}
+
+/* CSS variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Logo and Image */
+
+#logo{
+    margin: -25px -36px;
+
+}
+
+#logo img{
+    height: 45px;
+    margin: 43px 68px;
+}
+/* List Styling */
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(37, 22, 124);
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    height: 571%;
+    width: 100%;
+    z-index: -1;
+    background: url('./BackGroundImage.jpg')
+}
+
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-size: 25px
+}
+
+/* Utility classes */
+
+.h1-primary{
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.contact-box{
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+div form h1{
+    color: black;
+}
+
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid green;
+    border-radius: 14px;
+    outline: none;
+}
+.Gender{
+    font-size: 15px;
+    padding: 10px 10px;
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn{
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+.btn1{
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
